@@ -1,10 +1,10 @@
 # CSS
 
-- O que é?
+- ### O que é?
 
   - CSS (Cascading Style Sheet) em português significa Folhas de Estilos em Cascata. Foi criada por Hakon Lie e Bert Bos em 1995. Esse tipo de linguagem define o layout de documentos HTML, tudo que diz respeito a apresentação da página. As CSS separam a marcação HTML da apresentação do site
 
-- Layout com CSS
+- ### Layout com CSS
 
   - Para os programadores que já conhecem o CSS, poderão construir Folhas de Estilo em Cascata ou mesmo inserir estilos dentro das tags html utilizando o atributo <p style="";"">. Mas, é recomendável utilizar uma folha de estilo externa para definir todas formatações da página. Veja um exemplo de estilo utilizado dentro da tag de parágrafo:
 
@@ -12,9 +12,9 @@
       <p style="border:5px solid green;">
       ```
 
-      Deixa o texto com borda verde e com tamanho de 5 pixels</p>
+      - Deixa o texto com borda verde e com tamanho de 5 pixels</p>
 
-- Seletores, classes e id
+- ### Seletores, classes e id
 
   - Seletor pode ser todo e qualquer elemento HTML
 
@@ -49,7 +49,7 @@
 
     - ID segue a mesma lógica da classe, a única diferença é que um id só pode ser atribuído a uma **única** tag HTML.
 
-- FlexBox
+- ### FlexBox
 
   ## Para começar a trabalhar com flexbox:
 
