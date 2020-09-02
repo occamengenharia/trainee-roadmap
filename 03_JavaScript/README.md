@@ -58,7 +58,7 @@
 
 - Condicionais
 
-  ![](/home/prando/www/OCCAM/trainee-2k20/trainee-roadmap/03_JavaScript/assets/condicional.png)
+  ![](./assets/condicional.png)
 
   - If e else if são iguais a qualquer outra linguagens
 
@@ -89,6 +89,103 @@
       console.log(`Sorry, we are out of ${expr}.`);
   }
   ```
+
+  ![Switch case](./assets/switch.jpeg)
+
+- ```html
+  
+  ```
+<!DOCTYPE html>
+  <html lang="en">
+<head>
+      <title>Curso JavaScript</title>
+</head>
+  <body>
+
+      <script>
+          function retornoSexo(sexo) {
+            // M , F
+              /*if(sexo === 'M'){
+                return 'Masculino';
+              }else if(sexo === 'F'){
+                return 'Masculino';
+              }else{
+                  return 'outro';
+              }*/
+      
+              switch (sexo) {
+                  case 'M':
+                    return 'Masculino';
+                  case 'F':
+                    return 'Feminino';
+                  default:
+                    return  'outro';
+              }
+          }
+          var resultado = retornoSexo('M');
+          console.log(resultado);
+      </script>
+  </body>
+  </html>
+```
+  
+
+  
+- Operadores lógicos
+
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <title>Curso JavaScript</title>
+  </head>
+  <body>
+      
+      <script>
+  
+          // AND(&&) , OR (||), NOT (!==)
+          var sexo = 'M', idade = 23;
+  
+          /*if (sexo === 'M' || idade >= 18){
+              console.log('ok');
+          }*/
+  
+          var masculino = sexo === 'M'; // true
+          console.log(masculino);
+  
+      </script>
+  </body>
+  </html>
+  
+```
+
+  
+
+- Condição Ternária
+
+  ```html
+
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>Curso JavaScript</title>
+  </head>
+  <body>
+    
+      <script>
+
+          var sexo = 'M';
+
+          var retorno = (sexo === 'M') ? 'Masculino' : 'Feminino';
+  
+          console.log(retorno);
+  
+      </script>
+  </body>
+</html>
+  ```
+
+- 
 
 - Estrutura de repetição
 
