@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript</title>
+
+  <style>
+    body {
+      display: flex;
+      place-content: center;
+    }
+    button {
+      background: #223541;
+      color: #fff;
+      height: 30px;
+      cursor: pointer;
+
+    }
+  </style>
+</head>
+<body>
+  
+  <button id="btn">Clique aqui</button>
+
+  <div id="div1">O texto acima foi criado dinamicamente.</div>
+</body>
+
+<script>  
+
+  // var btn = document.getElementById('btn');
+
+  // function random(number) {
+  //   return Math.floor(Math.random()*(number+1));
+  // }
+
+  // btn.onclick = function() {
+  //   var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+  //   document.body.style.backgroundColor = rndCol;
+  // }
+
+  var divNova = document.createElement("div"); 
+  var conteudoNovo = document.createTextNode("Olá, cumprimentos!"); 
+  divNova.appendChild(conteudoNovo); //adiciona o nó de texto à nova div criada 
+
+  // adiciona o novo elemento criado e seu conteúdo ao DOM 
+  var divAtual = document.getElementById("div1"); 
+  document.body.insertBefore(divNova, divAtual); 
+
+</script>
+</html>

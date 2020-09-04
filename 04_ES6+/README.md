@@ -137,11 +137,11 @@ Javascript em sua forma mais "moderna", ES6 se refere a versão do javascript de
 
   - pode ter seu valor reatribuído
 
-  - ```javascript
-    let a = 1;
-    a=2;
-    // isso dará certo
-    ```
+- ```javascript
+  let a = 1;
+  a=2;
+  // isso dará certo
+  ```
 
 
 
