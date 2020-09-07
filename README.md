@@ -22,7 +22,7 @@ Tecnologias a serem estudadas
 
 - [HTML5](https://html.com/)
 - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-- [JavasCript](https://www.javascript.com)
+- [JavasCript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [GIT](https://git-scm.com/doc)
 - [Node.js](https://nodejs.org/)
 - [Express](https://expressjs.com/pt-br/)
