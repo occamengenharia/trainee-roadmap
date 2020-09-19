@@ -2,7 +2,7 @@
 
 - Se trata de 2 desafios:
   - Um deles é fazer uma função que retorna a soma de dois números, e uma função que retorna a subtração de dois números.
-  - Outro se trata de uma simulação de um carrinho de comprar, onde temos todas as operação possíveis em um carrinho, como: adicionar produto, somar o preço total das comprar dentro do carrinho, remover produto, encontrar produto mais caro, juntar dois carrinhos.
+  - Outro se trata de uma simulação de um carrinho de compras, onde temos todas as operação possíveis em um carrinho, como: adicionar produto, somar o preço total das compras dentro do carrinho, remover produto, encontrar produto mais caro, juntar dois carrinhos.
 
 ## Como iniciar o desafio ?
 
