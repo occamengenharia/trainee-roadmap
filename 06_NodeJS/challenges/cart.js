@@ -24,8 +24,7 @@ const sumCart = (arrayProducts) => {
 
 // TODO adicionar um produto no final do carrinho 
 const addProductToCart = (newProduct) => {
-  cart.push(newProduct)
-  return cart;
+  return [];
 }
 
 // TODO retornar qual o produto com valor mais alto 
