@@ -21,7 +21,7 @@ test("soma todos os produtos de um carrinho", () => {
 
   const output =  sumCart(input);
 
-  const expected = 32.25;
+  const expected = 1222.25;
 
   expect(output).toBe(expected);
 });
@@ -55,7 +55,7 @@ test("Retornar objeto do vetor com o maior preço", () => {
 });
 
 test("Remover o primeiro elemento do carrinho", () => {
-  const expected = output[0];
+  const expected = input[0];
   const output =  removeProductToCart(input);
 
   expect(output).toEqual(
