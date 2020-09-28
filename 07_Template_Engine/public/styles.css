@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: border-box;
+}
+
+body {
+  background: #282a36;
+}
+
+.main-index {
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: auto auto;
+  align-items: center;
+}
+
+.main-index aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-index aside h1 {
+  color: #8be9fd;
+  margin-bottom: 16px;
+}
+
+.main-index aside p {
+  color: #bd93f9;
+}
