@@ -1,10 +1,10 @@
 {
-  "name": "07_Template_Engine",
+  "name": "template",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon src/index.js"
   },
   "dependencies": {
     "axios": "^0.20.0",
