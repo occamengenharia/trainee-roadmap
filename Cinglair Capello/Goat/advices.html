@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- TODO import font -->  
+  <title>Wise Goat - Advice</title>
+</head>
+<body>
+  <div class="centralizer">
+    <a href="./index.html" class="title-advice-content">
+      <strong class="title-up-advice">Wise</strong>
+      <strong class="title-down-advice">Goat</strong>
+    </a>
+    <div class="main-advice">
+        <section class="message-advice-content">
+          <strong id="advice-message" class="message-up-advice"></strong>
+          <strong class="message-down-advice">-Goat</strong>
+        </section>
+      
+      <img class="image-advice" src="http://placegoat.com/600/600" alt="Bodezinho">
+    </div>
+  </div>
+</body>
+
+<script>
+  function getAdvice() {
+    try {
+      var promessa = fetch('https://api.adviceslip.com/advice').then( function(response) { return response} );
+
+      promessa.then(function(response) {
+        response.json().then(function(data) {
+          
+          var texto = '"' + data.slip.advice + '"';
+          
+          var element = document.getElementById('advice-message');
+          element.insertAdjacentHTML("afterbegin", texto);
+        })
+      });
+
+    } catch (error) {
+      console.error('Erro');
+    }
+  }
+
+  getAdvice();
+</script>
+</html>
