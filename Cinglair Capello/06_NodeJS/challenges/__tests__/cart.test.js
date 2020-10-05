@@ -21,7 +21,7 @@ test("soma todos os produtos de um carrinho", () => {
 
   const output =  sumCart(input);
 
-  const expected = 1222.25;
+  const expected = 122.25;
 
   expect(output).toBe(expected);
 });

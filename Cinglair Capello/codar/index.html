@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codar</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <header>
+    <i>Codar<span>.<span></i>
+      <div class="modo-escuro">
+        <span>Modo Escuro</span>
+               
+        <!-- Rounded switch -->
+        <label class="switch" id="botao">
+          <input type="checkbox" onchange="dark()" id="dark-modo">
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+    <section>
+
+      <a href="/">Início</a>
+      <a href="/">Serviço</a>
+      <a href="/">Contato</a>
+
+      <button>Login</button>
+    </section>
+  </header>
+
+
+  <main>
+    <section class = "main-sec">
+        <section class="parte-superior">
+          <img src="./img/video_call.png" alt="Pessoa no computador">
+    
+          <div class="info-superior">
+    
+            <span>Alavanque seu negócio com um</span>
+    
+            <strong>Website incrível</strong>
+    
+            <button type="button">Solicitar orçamento</button>
+          </div>
+    
+        </section>
+    
+        <section class= "parte-inferior">
+            <div class="info-inferior">
+              <ul>
+                <li><span><img src="./img/check.svg" alt="check"></span>Dominio personalizado</li>
+                <li><span><img src="./img/check.svg" alt="check"></span>Hospedagem</li>
+                <li><span><img src="./img/check.svg" alt="check"></span>Site responsivo</li>
+                <li><span><img src="./img/check.svg" alt="check"></span>Redes sociais</li>
+                <li><span><img src="./img/check.svg" alt="check"></span>Chat online</li>
+                <li><span><img src="./img/check.svg" alt="check"></span>Blog integrado</li>
+                
+              </ul>
+            </div>
+            <img src="./img/coding_.png" alt="">
+        </section>
+        <section class= "celular">
+          
+          <div>
+            <strong>Nossa equipe está a diposição!</strong>
+          </div>
+          <div>
+            <input type="tel" placeholder="Celular">
+            <button>Ligamos para você</button>
+          
+        </section>
+        <section class="depoimento">
+          <div>
+              <div class="depoimento_container">
+                  <p class="depoimento_text">Já tive experiências com outras 4 empresas da área e a Codar é sem sombra
+                      de dúvidas superior em todos os aspectos.</p>
+                  <p class="depoimento_autor">Pedro Ferreira</p>
+                  <p class="depoimento_job">Construtora Minari</p>
+              </div>
+          </div>
+          <div>
+              <div class="depoimento_container">
+                  <p class="depoimento_text">Processos bem simples e criação de um site exatamente como a minha escola
+                      queria!</p>
+                  <p class="depoimento_autor">Maria Rita</p>
+                  <p class="depoimento_job">Escola Criança Feliz</p>
+              </div>
+          </div>
+      </section>
+      <footer>
+        <section>
+            <strong><i>Codar.</i></strong>
+                    <p>Criamos websites incríveis</p>
+            </section>
+            <section>
+                <strong class="footer_header">Sobre</strong>
+                <p>Amamos criar soluções e entregar sites incríveis</p>
+            </section>
+            <section>
+                <strong class="footer_header">Contato</strong>
+                <div>
+                    <p>123 Av. Manjar - Nárnia</p>
+                    <p>+55 96 2321-3131</p>
+                    <p>contato@codar.com</p>
+                </div>
+            </section>
+            <section>
+                <strong class="footer_header">Redes sociais</strong>
+                <div id="social">
+                    <img src="./assets/facebook.svg" alt="">
+                    <img src="./assets/instagram.svg" alt="">
+                    <img src="./assets/twitter.svg" alt="">
+                </div>
+            </section>
+    </footer>
+
+
+    </section>
+
+  </main>
+
+
+
+  
+</body>
+<script>
+  function dark(){
+    var slider;
+    var body = document.body;
+    slider = document.getElementById("dark-modo");
+    if(slider.checked){
+      body.classList.add("modo-dark");
+    }
+    else {
+      body.classList.remove("modo-dark");
+    }
+  }
+
+</script>
+</html>
