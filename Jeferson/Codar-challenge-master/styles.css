@@ -1,0 +1,233 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 60px;
+}
+
+header strong {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+header strong i {
+    color: #d63410;
+}
+
+header strong span {
+    margin-right: 20px;
+}
+
+header section a {
+    text-decoration: none;
+    color: #000;
+}
+
+header section a+a {
+    margin-left: 30px;
+}
+
+header section button {
+    background-color: #d63410;
+    padding: 10 30px;
+    border-radius: 8px;
+    margin-left: 30px;
+    color: #fff;
+    transition: background 0.2s;
+}
+
+header section button:hover {
+    background: #ff2f00;
+    cursor: pointer;
+}
+
+#main_content {
+    padding: 100px 150px;
+}
+
+.orcamento {
+    display: flex;
+    justify-content: space-between;
+}
+
+.orcamento img {
+    width: 30rem;
+}
+
+.orcamento div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.orcamento div p {
+    font-weight: bold;
+}
+
+.orcamento div strong {
+    color: #d63410;
+    font-size: 48px;
+}
+
+.orcamento div button {
+    background-color: #d63410;
+    padding: 10 50px;
+    border-radius: 8px;
+    margin-top: 30px;
+    color: #fff;
+    transition: background 0.2s;
+}
+
+.orcamento div button:hover {
+    background: #ff2f00;
+    cursor: pointer;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.list img {
+    width: 30rem;
+}
+
+.list_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.list_info div img {
+    width: 30px;
+    margin-right: 20px;
+}
+
+.list_info div {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.list_info div+div {
+    margin-top: 10px;
+}
+
+.cellphone {
+    display: flex;
+    flex-direction: column;
+}
+
+.cellphone p {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.cellphone div input {
+    background: #dadada;
+    border-radius: 8px;
+    padding: 15px 10px;
+    margin-right: 10px;
+}
+
+.cellphone div button {
+    background-color: #d63410;
+    padding: 15 50px;
+    border-radius: 8px;
+    margin-top: 30px;
+    color: #fff;
+    transition: background 0.2s;
+}
+
+.cellphone div button:hover {
+    background: #ff2f00;
+    cursor: pointer;
+}
+
+.depoinment {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.depoinment div {
+    display: flex;
+    background: #dadada;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0px 20px;
+    padding: 20px;
+}
+
+.depoinment div img {
+    width: 90px;
+}
+
+.depoinment_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.depoinment_text {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.depoinment_autor {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.depoinment_job {
+    font-size: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    background: #000;
+    color: white;
+    padding: 70px 50px;
+    margin-top: 90px;
+}
+
+.footer_header {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+footer section strong i {
+    font-size: 48px;
+}
+
+footer section p {
+    padding-top: 20px;
+    font-weight: 400;
+}
+
+#social {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+}
