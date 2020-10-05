@@ -1,0 +1,26 @@
+html
+  head  
+    title casos de corona
+    style
+      include ../public/styles.css 
+
+  body
+    main(class="main-index")
+      aside 
+        h1 Confirmados no #{country} :/
+        p #{confirmed} casos!
+
+      aside
+        h1 Mortes no #{country} :/
+        p #{deaths} mortes!
+
+      
+      div
+        form(action="/country/brazil/states" method="GET" class="select-state")
+          select(name="estado" class="select")
+            option(value="" name="") Escolha um estado
+            each sigla in siglas
+              option(value=sigla name=sigla)= sigla
+
+          input(type="submit", value="Ver dados do estado")
+        
