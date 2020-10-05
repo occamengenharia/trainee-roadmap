@@ -1,0 +1,16 @@
+html
+  head  
+    title casos de corona
+    style
+      include ../public/styles.css
+  body
+    main(class="main-index")
+      aside 
+        h1 Confirmados  #{uf} :/
+        p #{cases} casos!
+
+      aside
+        h1 Mortes  #{uf} :/
+        p #{deaths} mortes!
+      a(href="/country/brazil") navagação para casos Brasil
+        
