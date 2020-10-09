@@ -1,6 +1,4 @@
-const { GridFSBucket } = require('mongodb');
 const { connection } = require('mongoose');
-const { find } = require('../models/Event');
 const Event = require('../models/Event');
 const createConnection = require('../service/mongo');
 
