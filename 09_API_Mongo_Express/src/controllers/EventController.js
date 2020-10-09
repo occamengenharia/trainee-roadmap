@@ -1,4 +1,3 @@
-const { connection } = require('mongoose');
 const Event = require('../models/Event');
 const createConnection = require('../service/mongo');
 
