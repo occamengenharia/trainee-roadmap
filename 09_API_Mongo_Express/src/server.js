@@ -26,6 +26,7 @@ class App {
     mongoose.connect('mongodb://localhost:27017/trainee-mongoose', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
+      useFindAndModify: true
     });
   }
 

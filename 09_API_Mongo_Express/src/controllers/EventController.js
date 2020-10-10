@@ -1,3 +1,4 @@
+const { isValidObjectId } = require('mongoose')
 const Event = require('../models/Event');
 const createConnection = require('../service/mongo');
 
@@ -11,6 +12,36 @@ class EventController {
    * - Delete
    */ // NUNCA DEVE TER MAIS DO QUE ESSES 5 MÉTODOS NO CONTROLLER !!
 
+  
+  async list(request, response ) {
+
+    const connection = await createConnection();
+
+    const eventsDrive = await connection.db('trainee-drive').collection('events').findOne({nome: 'event test'});
+
+    const eventsMongoose = await Event.findOne({nome: 'event test'});
+
+    await connection.close();
+
+    return response.json(eventsMongoose);
+  }
+
+  async show(request, response ) {
+    const { id } = request.params;
+
+    if(!isValidObjectId(id)) {
+      return response.status(401).json({error: 'não foi possível localizar evento!'});
+    }
+
+    const existsEvent = await Event.findById(id);
+
+    if(!existsEvent) {
+      return response.status(401).json({error: 'não foi possível localizar evento!'});
+    }
+
+    return response.json(existsEvent);
+  }
+
   async create(request, response ) {
     const {
       organizador_id,
@@ -19,7 +50,7 @@ class EventController {
       local,
     } = request.body;
 
-    const existsEvents = await Event.findOne({organizador: organizador});  
+    const existsEvents = await Event.findOne({_id: '5f81c2c150a4375807deb262'});  
 
     if(existsEvents) {
       return response.status(401).json({error: 'não foi possivel cadastrar'});
@@ -41,18 +72,42 @@ class EventController {
     return response.json(event);
   }
 
-  async list(request, response ) {
+  async update(request, response ) {
+    const { id } = request.params;
 
-    const connection = await createConnection();
+    if(!isValidObjectId(id)) {
+      return response.status(401).json({error: 'não foi possível localizar evento!'});
+    }
 
-    const eventsDrive = await connection.db('trainee-drive').collection('events').findOne({nome: 'event test'});
+    const eventUpdated = await Event.findByIdAndUpdate(id, request.body, {
+      new: true // Para retornar o evento atualizado
+    });
 
-    const eventsMongoose = await Event.findOne({nome: 'event test'});
+    if(!eventUpdated) {
+      return response.status(401).json({error: 'não foi possível localizar evento!'});
+    }
 
-    await connection.close();
-
-    return response.json(eventsMongoose);
+    return response.json(eventUpdated);
   }
+
+  async delete(request, response ) {
+    const { id } = request.params;
+
+    if(!isValidObjectId(id)) {
+      return response.status(401).json({error: 'não foi possível localizar evento!'});
+    }
+
+    // retorna o evento que foi apagado
+    const eventUpdated = await Event.findByIdAndDelete(id);
+
+    // caso não ExtensionScriptApis, quer dizer que não achou na busca
+    if(!eventUpdated) {
+      return response.status(401).json({error: 'não foi possível localizar evento!'});
+    }
+
+    return response.json({success: 'Evento apagado com sucesso'});
+  }
+
 }
 
 module.exports = EventController;
