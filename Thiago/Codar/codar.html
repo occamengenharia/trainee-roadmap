@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codar</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+  <header>
+    <i>Codar<span>.<span></i>
+
+    <section>
+      <a href="/">Início</a>
+      <a href="/">Serviço</a>
+      <a href="/">Contato</a>
+
+      <button id="botao1">Login</button>
+    </section>
+  </header>
+
+
+  <main>
+    <section class="parte-superior">
+      <img src="./assets/video_call.png" alt="Pessoa no computador">
+
+      <div class="info-superior">
+
+        <span>Alavanque seu negócio com um</span>
+
+        <strong>Website incrível</strong>
+
+        <button type="button">Solicitar orçamento</button>
+      </div>
+    </section>
+
+    <section class="parte-meio">
+       <div class="info-meio">
+         <ul>
+           <li>
+            Domínio personalizado
+           </li>
+           <li>
+            Hospedagem
+           </li>
+           <li>
+            Site responsivo
+           </li>
+           <li>
+            Redes sociais
+           </li>
+           <li>
+            Chat online
+           </li> 
+           <li>  
+            Blog integrado  
+           </li>
+         </ul>
+         <img src = "./assets/coding_.png" alt = "mãos no teclado">
+       </div>
+       <div class = info-contato >
+        <span>Nossa equipe esta á disposição!</span>
+        <div>
+          <input type ="tel" placeholder="  Celular" id="celular"> 
+          <button id="botao2">ligamos para voce</button>
+        </div>
+      </div>
+
+    </section>
+    <section class = parte-inferior>
+      <div class= quadro-esquerda>
+        <img src="./assets/ball.png" >
+        <div class = info>
+          <span>
+            ja tive experiencia com outras 4 empresas da area e a Codar é sem sombra de duvidas superior em todos os aspectos
+          </span>
+          <br>
+          <strong>Pedro Ferreira</strong>
+          <br>
+          <span >Construtora Minari</span>
+        </div>  
+      </div>
+      <div class= quadro-direita>
+        <img src="./assets/ball.png" >
+        <div class = info>
+          <span>
+           processo bem simples e criação de um site exatamente como minha escola queria!
+          </span>
+          <br>
+          <br>
+          <strong>Maria Rita</strong>
+          <br>
+          <span>Escola criança Feliz</span>
+        </div>  
+      </div>
+    </section>
+  </main>
+</body>
+<script>
+  var btn1 = document.getElementById("botao1");
+function random(number) {
+  return Math.floor(Math.random()*(number+1));
+}
+
+btn1.onclick = function() {
+  var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+  document.body.style.backgroundColor = rndCol;
+}
+
+var btn2 = document.getElementById("botao2");
+
+btn2.onclick = function (){
+  alert(document.getElementById("celular").value);
+}
+</script>
+</html>
