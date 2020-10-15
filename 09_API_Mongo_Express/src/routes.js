@@ -1,15 +1,16 @@
 const { Router } = require('express');
 
-const EventController = require('./controllers/EventController');
+const UserController = require('./controllers/UserController');
 
 const routes = Router();
 
-const eventController = new EventController();
 
-routes.post('/events', eventController.create);
-routes.get('/events', eventController.list);
-routes.get('/events/:id', eventController.show);
-routes.put('/events/:id', eventController.update);
-routes.delete('/events/:id', eventController.delete);
+const userController = new UserController();
+
+routes.post('/users', userController.create);
+routes.get('/users', userController.list);
+routes.get('/users/:cpf', userController.show);
+routes.put('/users/:cpf', userController.update);
+routes.delete('/users/:cpf', userController.delete);
 
 module.exports = routes;
