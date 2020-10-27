@@ -14,7 +14,7 @@
 </div>
 
 
-Se você estiver lendo esta versão do README, provavelmente significa que o processo está em fase extremamente inicial.
+Se você estiver lendo esta versão do README, provavelmente significa que o processo está mais da metade completo
 
 ## Tecnologias 
 
@@ -33,7 +33,8 @@ Tecnologias a serem estudadas
 
 
 ## Participantes
-...
+| [<img src="https://avatars3.githubusercontent.com/u/69329401?s=460&u=cb8547c19cd2ab162cebc9b78eb162a786b76483&v=4" width=115><br><sub>Max Junior</sub>](https://github.com/maxjunior98) | [<img src="https://avatars1.githubusercontent.com/u/65616868?s=96&v=4" width=115><br><sub>Cinglair Augusto</sub>](https://github.com/cinglair) |[<img src="https://avatars2.githubusercontent.com/u/52104910?s=460&u=569856f89490c13b688c072ed8cf568ad528b189&v=4" width=115><br><sub>Daniel Favero</sub>](https://github.com/Proyol) |[<img src="https://avatars0.githubusercontent.com/u/56237020?s=460&u=aa49fd043174adc745117f430038b7e38b5c7206&v=4" width=115><br><sub>Jeferson Souza</sub>](https://github.com/souzjfe) | [<img src="https://avatars1.githubusercontent.com/u/65026922?s=460&u=059993e33def357fd519648c9cfd6b11dce421b2&v=4" width=115><br><sub>Thiago Caun</sub>](https://github.com/thiagok1) |
+| :---: | :---: | :---: | :---: | :---: |
 
 ## Ministrantes
 
