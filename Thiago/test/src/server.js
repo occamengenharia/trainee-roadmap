@@ -31,4 +31,4 @@ class app {
 
 }
 
-module.exports = new app().express;;
+module.exports = new app().express;

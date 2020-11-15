@@ -1,15 +1,3 @@
+const app = require('./server');
 
-
-const app = express();
-
-app.use(bodyParser.json());
-
-app.use(bodyParser.urlencoded({extended:false}));
-
-app.get('/',(req,res)=>{
-    res.send("ok!");
-})
-
-require('./controllers/authcontroller')(app)
-
-app.listen(3000);
+app.listen(process.env.MONGO_URL || 3333);
