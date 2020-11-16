@@ -1,0 +1,20 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "frontend com React",
+      "owner": "Irineu"
+    },
+    {
+      "title": "backend com node",
+      "owner": "Irineu",
+      "email": "abc@hgf.com",
+      "id": 2
+    },
+    {
+      "title": "eu sou o batman",
+      "owner": "Bruce Wayne",
+      "id": 3
+    }
+  ]
+}

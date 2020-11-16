@@ -1,0 +1,18 @@
+*{
+  
+  padding: 0;
+  margin: 0;
+  
+  font-size: 16px;
+  font-family: 'Roboto';
+}
+
+main{
+  background-image: linear-gradient(to bottom left, rgb(171, 49, 228), rgb(10, 135, 207));
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
