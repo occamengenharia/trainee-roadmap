@@ -14,8 +14,6 @@
 </div>
 
 
-Se você estiver lendo esta versão do README, provavelmente significa que o processo está mais da metade completo
-
 ## Tecnologias 
 
 Tecnologias a serem estudadas
